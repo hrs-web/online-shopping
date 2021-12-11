@@ -1,17 +1,16 @@
 package com.huangyunchi.web.controller.member;
 
-import java.io.IOException;
+import com.huangyunchi.entity.Member;
+import com.huangyunchi.entity.Orders;
+import com.huangyunchi.entity.common.Page;
+import com.huangyunchi.service.OrdersService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.huangyunchi.entity.Member;
-import com.huangyunchi.entity.Orders;
-import com.huangyunchi.entity.common.Page;
-import com.huangyunchi.service.OrdersService;
+import java.io.IOException;
 
 /**
  * 会员中心-->订单列表
@@ -26,7 +25,7 @@ public class OrderListServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		int number = 1;
-		int size = 10;
+		int size = 15;
 		String n = req.getParameter("number");
 		if(n != null && !"".equals(n)){
 			number = Integer.parseInt(n);
@@ -39,7 +38,7 @@ public class OrderListServlet extends HttpServlet {
 			size = Integer.parseInt(s);
 		}
 		if(size <= 0){
-			size = 10;
+			size = 15;
 		}
 		
 		Member curr_mbr = (Member)req.getSession().getAttribute("curr_mbr");

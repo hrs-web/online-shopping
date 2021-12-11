@@ -1,12 +1,12 @@
 <%@ page pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@taglib uri="http://www.itvk.cn/jsp/tags" prefix="q"%>
+<%--<%@taglib uri="http://www.itvk.cn/jsp/tags" prefix="q"%>--%>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 <jsp:include page="/icd_meta.jsp" />
-<title>卓尔商城-公告列表</title>
+<title>公告列表</title>
 <jsp:include page="/icd_link.jsp" />
 </head>
 <body>
@@ -30,8 +30,8 @@
 				</tbody>
 			</table>
 			<div class="panel-footer">
-				<q:pager totalElements="${newsPage.totalElements}"
-					number="${newsPage.number}" />
+<%--				<q:pager totalElements="${newsPage.totalElements}"--%>
+<%--					number="${newsPage.number}" />--%>
 				<div style="clear: both;"></div>
 			</div>
 		</div>

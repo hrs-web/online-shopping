@@ -1,23 +1,24 @@
 package com.huangyunchi.service;
 
-import java.math.BigDecimal;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Timestamp;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import org.apache.commons.dbutils.DbUtils;
-import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.ScalarHandler;
-
 import com.huangyunchi.common.DbHelper;
 import com.huangyunchi.entity.Item;
 import com.huangyunchi.entity.Orders;
 import com.huangyunchi.entity.Product;
 import com.huangyunchi.entity.common.Page;
+import org.apache.commons.dbutils.DbUtils;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.ScalarHandler;
+
+import java.math.BigDecimal;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 订单处理相关的业务逻辑类
@@ -54,19 +55,21 @@ public class OrdersService {
 	 * @throws RuntimeException
 	 */
 	public Orders save(Orders orders) throws RuntimeException{
-		String sql = "INSERT INTO orders(number, buyer_id, total_amount, "
+		String sql = "INSERT INTO orders (number, buyer_id, total_amount, "
 				+ "total_price,payment_price,remark,contact,mobile,street,zipcode,"
 				+ "create_time,payment_time,delivery_time,end_time,status)"
 				+ " VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		
-		String sql2 = "INSERT INTO item(order_id,product_id,amount,"
+		String sql2 = "INSERT INTO item (order_id,product_id,amount,"
 				+ "total_price,payment_price) VALUES(?,?,?,?,?)";
+
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:s.SSS");
 		
 		Object[] params = {orders.getNumber(), orders.getBuyer_id(), 
 				orders.getTotal_amount(), orders.getTotal_price(), 
 				orders.getPayment_price(), orders.getRemark(),
 				orders.getContact(), orders.getMobile(), orders.getStreet(), 
-				orders.getZipcode(), orders.getCreate_time(), orders.getPayment_time(),
+				orders.getZipcode(), df.format(new Date()), orders.getPayment_time(),
 				orders.getDelivery_time(), orders.getEnd_time(), orders.getStatus()};
 		
 		Connection conn = null;
@@ -74,7 +77,8 @@ public class OrdersService {
 			conn = DbHelper.getConn();
 			conn.setAutoCommit(false); 
 
-			Long id = qr.insert(conn, sql, scalarHandler, params);
+			Object obj = qr.insert(conn, sql, scalarHandler, params);
+			Long id = Long.valueOf(String.valueOf(obj));
 			orders.setId(id.intValue());
 			
 			//批量添加订单项
@@ -454,9 +458,9 @@ public class OrdersService {
 		String sql = "SELECT COUNT(distinct o.id) FROM orders o"
 				+ " INNER JOIN item i ON o.id= i.order_id"
 				+ " INNER JOIN product p ON i.product_id=p.id"
-				+ " WHERE o.buyer_id=?";
+				+ " WHERE o.buyer_id="+buyer_id;
 				
-		String sql2 = "SELECT distinct o.id oid, o.number onumber, o.buyer_id as obuyer_id, "
+		String sql2 = "SELECT o.id oid, o.number onumber, o.buyer_id as obuyer_id, "
 				+ "o.total_amount ototal_amount, o.total_price ototal_price, o.payment_price opayment_price, "
 				+ "o.remark oremark,o.contact ocontact,o.mobile omobile,o.street ostreet, "
 				+ "o.zipcode ozipcode, o.create_time ocreate_time, "
@@ -472,8 +476,8 @@ public class OrdersService {
 				+ " INNER JOIN item i ON o.id = i.order_id"
 				+ " INNER JOIN product p ON i.product_id=p.id"
 				+ " WHERE o.buyer_id=?"
-				+ " ORDER BY o.id DESC"
-				+ " LIMIT ?,?";
+				+ " ORDER BY o.id DESC";
+				//+ " LIMIT ?,?";
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -482,7 +486,8 @@ public class OrdersService {
 			conn = DbHelper.getConn();
 			
 			System.out.println(sql);
-			Long temp = qr.query(conn, sql, scalarHandler, buyer_id);
+			Object obj = qr.query(conn, sql, scalarHandler);
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null && temp.longValue() > 0){
 				page.setTotalElements(temp.longValue());
 				
@@ -491,8 +496,8 @@ public class OrdersService {
 				System.out.println(sql2);
 				pstmt = conn.prepareStatement(sql2);
 				pstmt.setInt(1, buyer_id);
-				pstmt.setInt(2, (number - 1) * size);
-				pstmt.setInt(3, size);
+				//pstmt.setInt(2, (number - 1) * size);
+				//pstmt.setInt(3, size);
 				rs = pstmt.executeQuery();
 				
 				while(rs.next()){
@@ -613,11 +618,10 @@ public class OrdersService {
 		}
 		return page;
 	}
-	
+
 	/**
 	 * 获取指定编号的订单
-	 * @param number
-	 * @param size
+	 * @param id
 	 * @return
 	 * @throws RuntimeException
 	 */

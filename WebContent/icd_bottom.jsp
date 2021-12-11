@@ -2,8 +2,8 @@
 <!-- 底部 -->
 <div id="footer">
 	<div class="wrapper">
-		<span>© 2014-2016 天津卓讯科技有限公司 </span>
-		<div class="pull-right">津ICP备16000047号</div>
+		<span>© 2014-2016 XXXXXX科技有限公司 </span>
+		<div class="pull-right">粤ICP备16000047号</div>
 	</div>
 </div>
 <!-- /底部 -->
@@ -39,10 +39,10 @@
 		</div>
 	</div>
 	<div class="slidebar-phone">
-		<div class="phone">022-58280969</div>
+		<div class="phone">022-5828096900</div>
 	</div>
 	<div class="slidebar-wx">
-		<img class="pic" src="${ctx}/images/qrcode_wx.jpg" />
+		<img class="pic" src="" />
 	</div>
 </div>
 <!-- /右侧浮动栏 -->

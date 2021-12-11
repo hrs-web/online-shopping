@@ -5,7 +5,7 @@
 <html lang="zh-cn">
 <head>
 <jsp:include page="/icd_meta.jsp" />
-<title>卓尔商城-公告详情</title>
+<title>公告详情</title>
 <jsp:include page="/icd_link.jsp" />
 </head>
 <body>

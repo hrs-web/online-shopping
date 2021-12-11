@@ -1,19 +1,19 @@
 package com.huangyunchi.service;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.huangyunchi.common.DbHelper;
+import com.huangyunchi.entity.Member;
+import com.huangyunchi.entity.common.Page;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import com.huangyunchi.common.DbHelper;
-import com.huangyunchi.entity.Member;
-import com.huangyunchi.entity.common.Page;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 会员相关的业务逻辑类---->CRUD操作
@@ -36,12 +36,12 @@ public class MemberService {
 	 * @return 新增成功后的会员对象
 	 */
 	public Member save(Member member){
-		String sql = "insert into member(mobile,pwd,real_name,nick_name,email,"
-				+ "gender,register_time) values(?,?,?,?,?,?,?)";
+		String sql = "insert into member (mobile,pwd,real_name,nick_name,email,"
+				+ "register_time) values(?,?,?,?,?,?)";
 		
-		Object[] params = { member.getMobile(), member.getPwd(), 
-				member.getReal_name(), member.getNick_name(), member.getEmail(), 
-				member.isGender(), member.getRegister_time() 
+		Object[] params = { member.getMobile(), member.getPwd(),
+				member.getReal_name(), member.getNick_name(), member.getEmail()
+				, new java.sql.Date(new Date().getTime())
 		};
 		
 		Connection conn = null;
@@ -50,7 +50,8 @@ public class MemberService {
 			conn.setAutoCommit(false); //启动事务
 			
 			//执行数据库的插入操作，返回生成的主键值
-			Long temp = qr.insert(conn, sql, scalarHandler, params);
+			Object obj = qr.insert(conn, sql, scalarHandler, params);
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null){
 				member.setId(temp.intValue());
 			}
@@ -92,20 +93,22 @@ public class MemberService {
 	 * @param member 要更新的会员对象
 	 */
 	public void update(Member member){
-		String sql = "update member  set mobile=?,pwd=?,real_name=?,nick_name=?,"
-				+ "email=?,gender=?,register_time=? where id=?";
+		String sql = "update member  set mobile='"+member.getMobile()+"',pwd='"+member.getPwd()
+				+"',real_name='"+member.getReal_name()+"',nick_name='"+member.getNick_name()
+				+"',email='"+member.getEmail()+"',gender="+(member.isGender()==true?1:0)
+				+",register_time='"+member.getRegister_time()+"' where id="+member.getId();
 		
-		Object[] params = { member.getMobile(), member.getPwd(), 
+		/*Object[] params = { member.getMobile(), member.getPwd(),
 				member.getReal_name(), member.getNick_name(), member.getEmail(), 
 				member.isGender(), member.getRegister_time(), member.getId()
-		};
+		};*/
 		
 		Connection conn = null;
 		try {
 			conn = DbHelper.getConn(); //获取连接
 			conn.setAutoCommit(false); //启动事务
 			
-			qr.update(conn, sql, params);
+			qr.update(conn, sql);
 			
 			DbUtils.commitAndCloseQuietly(conn); //提交事务并关闭连接
 		} catch (SQLException e) {

@@ -1,18 +1,17 @@
 package com.huangyunchi.web.controller;
 
-import java.io.IOException;
+import com.huangyunchi.entity.Category;
+import com.huangyunchi.entity.Product;
+import com.huangyunchi.entity.common.Page;
+import com.huangyunchi.service.CategoryService;
+import com.huangyunchi.service.ProductService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.huangyunchi.entity.Category;
-import com.huangyunchi.entity.Product;
-import com.huangyunchi.entity.common.Page;
-import com.huangyunchi.service.CategoryService;
-import com.huangyunchi.service.ProductService;
+import java.io.IOException;
 
 /**
  * 分类下的商品列表
@@ -60,6 +59,8 @@ public class ProductListServlet extends HttpServlet {
 		}
 		
 		request.setAttribute("prodPage", page);
+		request.setAttribute("level",level);
+		request.setAttribute("id",idStr);
 		request.getRequestDispatcher("/product_list.jsp").forward(request, response);
 	}
 

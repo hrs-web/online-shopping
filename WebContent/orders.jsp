@@ -52,6 +52,12 @@
 						type="submit" id="submit" class="btn btn-primary" value="去支付" />
 				</div>
 			</form>
+			<c:if test="${!empty msg}">
+				<div class="form-group">
+					<div id="formError" class="alert alert-danger">${msg}</div>
+				</div>
+				<c:remove var="msg" />
+			</c:if>
 		</div>
 	</div>
 	<!-- /主内容 -->

@@ -42,7 +42,6 @@
 								</div>
 								<button type="submit" class="btn btn-primary btn-wider btn-lg">登录</button>
 								&nbsp; &nbsp; <a href="${ctx}/member_register.jsp">注册</a>&nbsp;
-								&nbsp; <a href="${ctx}/resetpassword.jsp">忘记密码</a>
 							</form>
 						</div>
 					</div>

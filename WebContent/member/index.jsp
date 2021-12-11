@@ -1,12 +1,12 @@
 <%@ page pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@taglib uri="http://www.itvk.cn/jsp/tags" prefix="q"%>
+<%--<%@taglib uri="http://www.itvk.cn/jsp/tags" prefix="q"%>--%>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 <jsp:include page="/icd_meta.jsp" />
-<title>会员首页</title>
+<title>个人中心</title>
 <jsp:include page="/icd_link.jsp" />
 </head>
 <body>
@@ -80,7 +80,7 @@
 									</td>
 									<td class="text-right">${ord.remark}</td>
 									<td class="text-center"><a
-										href="${ctx}/member/orders/detail?id=${ord.id}">详情</a> <c:if
+										href="">详情</a> <c:if
 											test="${ord.status==4}" var="flag">
 											<a href="${ctx}/member/orders/status?id=${ord.id}&status=5">确认收货</a>
 										</c:if> <c:if test="${ord.status==3}" var="flag">
@@ -89,13 +89,13 @@
 								</tr>
 							</c:forEach>
 						</tbody>
-						<tfoot>
-							<tr>
-								<td colspan="8"><q:pager
-										totalElements="${page.totalElements}" number="${page.number}" />
-								</td>
-							</tr>
-						</tfoot>
+<%--						<tfoot>--%>
+<%--							<tr>--%>
+<%--								<td colspan="8"><q:pager--%>
+<%--										totalElements="${page.totalElements}" number="${page.number}" />--%>
+<%--								</td>--%>
+<%--							</tr>--%>
+<%--						</tfoot>--%>
 					</table>
 				</div>
 			</div>

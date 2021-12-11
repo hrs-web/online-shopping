@@ -1,12 +1,12 @@
 <%@ page pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@taglib uri="http://www.itvk.cn/jsp/tags" prefix="q"%>
+<%--<%@taglib uri="http://www.itvk.cn/jsp/tags" prefix="q"%>--%>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
 <jsp:include page="/icd_meta.jsp" />
-<title>卓尔商城-商品列表</title>
+<title>商品列表</title>
 <jsp:include page="/icd_link.jsp" />
 </head>
 <body>
@@ -46,8 +46,31 @@
 
 			<div class="clearfix"
 				style="padding: 0 12px; border-top: 1px dotted #e5e5e5;">
-				<q:pager totalElements="${prodPage.totalElements}"
-					number="${prodPage.number}" />
+				<ul class="pager">
+					<c:if test="${prodPage.number == 1}">
+						<li class="previous disabled"><a href="#">«</a></li>
+					</c:if>
+					<c:if test="${prodPage.number != 1}">
+						<li class="previous"><a href="${ctx}/product/list?level=${level}&id=${id}&number=${prodPage.number-1}">«</a></li>
+					</c:if>
+					<%--遍历页码--%>
+					<c:forEach begin="1" end="${prodPage.totalPages}" var="i">
+						<c:if test="${prodPage.number == i}">
+							<li class="active">
+						</c:if>
+						<c:if test="${prodPage.number != i}">
+							<li>
+						</c:if>
+						<a href="${ctx}/product/list?level=${level}&id=${id}&number=${i}">${i}</a>
+						</li>
+					</c:forEach>
+					<c:if test="${prodPage.number == prodPage.totalPages}">
+						<li class="previous disabled"><a href="#">»</a></li>
+					</c:if>
+					<c:if test="${prodPage.number != prodPage.totalPages}">
+						<li class="next"><a href="${ctx}/product/list?level=${level}&id=${id}&number=${prodPage.number+1}">»</a></li>
+					</c:if>
+				</ul>
 			</div>
 		</div>
 		<!-- /列表结束 -->

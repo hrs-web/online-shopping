@@ -1,7 +1,7 @@
 <%@ page pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
-<%@taglib uri="http://www.itvk.cn/jsp/tags" prefix="q"%>
+<%--<%@taglib uri="http://www.itvk.cn/jsp/tags" prefix="q"%>--%>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -40,8 +40,33 @@
 
 			<div class="clearfix"
 				style="padding: 0 12px; border-top: 1px dotted #e5e5e5;">
-				<q:pager totalElements="${page.totalElements}"
-					number="${page.number}" />
+				<%--<q:pager totalElements="${page.totalElements}"
+					number="${page.number}" />--%>
+                <ul class="pager">
+                    <c:if test="${page.number == 1}">
+                        <li class="previous disabled"><a href="#">«</a></li>
+                    </c:if>
+                    <c:if test="${page.number != 1}">
+                        <li class="previous"><a href="${ctx}/search?keyword=${param.keyword}&number=${page.number-1}">«</a></li>
+                    </c:if>
+                    <%--遍历页码--%>
+                    <c:forEach begin="1" end="${page.totalPages}" var="i">
+                        <c:if test="${page.number == i}">
+                            <li class="active">
+                        </c:if>
+                        <c:if test="${page.number != i}">
+                            <li>
+                        </c:if>
+                                <a href="${ctx}/search?keyword=${param.keyword}&number=${i}">${i}</a>
+                            </li>
+                    </c:forEach>
+                    <c:if test="${page.number == page.totalPages}">
+                        <li class="previous disabled"><a href="#">»</a></li>
+                    </c:if>
+                    <c:if test="${page.number != page.totalPages}">
+                        <li class="next"><a href="${ctx}/search?keyword=${param.keyword}&number=${page.number+1}">»</a></li>
+                    </c:if>
+                </ul>
 			</div>
 		</div>
 		<!-- /列表结束 -->

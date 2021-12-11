@@ -9,18 +9,18 @@
 	<div id="toolbar">
 		<div class="wrapper row">
 			<c:if test="${!empty sessionScope.curr_mbr}" var="flag">
-				<div id="welcome" class="col-xs-5">欢迎会员
+				<div id="welcome" class="col-xs-5"  style="font-size: 15px">欢迎会员
 					${sessionScope.curr_mbr.nick_name}！</div>
 				<div class="col-xs-4"></div>
-				<div class="col-xs-3" style="text-align: right;">
-					<a href="${ctx}/member/orders">会员首页</a> <a
+				<div class="col-xs-3" style="text-align: right;font-size: 15px">
+					<a href="${ctx}/member/orders">个人中心</a> <a
 						href="${ctx}/member/logout">退出</a>
 				</div>
 			</c:if>
 			<c:if test="${!flag}">
 				<div class="col-xs-5"></div>
 				<div class="col-xs-4"></div>
-				<div class="col-xs-3" style="text-align: right;">
+				<div class="col-xs-3" style="text-align: right;font-size: 15px">
 					<a href="${ctx}/member_login.jsp">登录</a> <a
 						href="${ctx}/member_register.jsp">注册</a>
 				</div>

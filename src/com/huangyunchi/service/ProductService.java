@@ -1,18 +1,17 @@
 package com.huangyunchi.service;
 
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.huangyunchi.common.DbHelper;
+import com.huangyunchi.entity.Product;
+import com.huangyunchi.entity.common.Page;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import com.huangyunchi.common.DbHelper;
-import com.huangyunchi.entity.Product;
-import com.huangyunchi.entity.common.Page;
+import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -26,7 +25,7 @@ public class ProductService {
 	private BeanListHandler<Product> beanListHandler = new BeanListHandler<Product>(Product.class);
 
 	public Product save(Product product) throws RuntimeException{
-		String sql = "INSERT INTO product(name, cate_id, thumbnail, inventory, "
+		String sql = "INSERT INTO product (name, cate_id, thumbnail, inventory, "
 				+ "sales_volume,price,sale_price,detail_description,"
 				+ "selling_description,create_time,sale_time) "
 				+ " VALUES(?,?,?,?,?,?,?,?,?,?,?)";
@@ -134,20 +133,22 @@ public class ProductService {
 		Page<Product> page = new Page<>(number, size);
 		
 		String sql = "SELECT COUNT(id) FROM product ";
-		String sql2 = "SELECT * FROM product ORDER BY id DESC LIMIT ?,?";
+//		String sql2 = "SELECT * FROM product ORDER BY id DESC LIMIT ?,?";
+		String sql2 = "SELECT TOP "+Integer.valueOf(size)+" * FROM product WHERE id NOT IN (SELECT TOP "+Integer.valueOf((number - 1) * size)+" id FROM product ORDER BY id DESC) ORDER BY id DESC";
 
 		Connection conn = null;
 		try{
 			conn = DbHelper.getConn();
 			
-			Long temp = qr.query(conn, sql, scalarHandler);
+			Object obj = qr.query(conn, sql, scalarHandler);
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null && temp.longValue() > 0){
 				page.setTotalElements(temp.longValue());
 				
-				Object[] params = {Integer.valueOf((number - 1) * size),
-						Integer.valueOf(size)};
+//				Object[] params = {Integer.valueOf((number - 1) * size),
+//						Integer.valueOf(size)};
 				
-				List<Product> list = qr.query(conn, sql2, beanListHandler, params);
+				List<Product> list = qr.query(conn, sql2, beanListHandler);
 				page.setItems(list);
 			}
 		}catch(Exception e){
@@ -253,21 +254,25 @@ public class ProductService {
 		Page<Product> page = new Page<>(number, size);
 		
 		String sql = "SELECT COUNT(id) FROM product WHERE cate_id=?";
-		String sql2 = "SELECT * FROM product WHERE cate_id=? ORDER BY sale_time DESC LIMIT ?,?";
+//		String sql2 = "SELECT * FROM product WHERE cate_id=? ORDER BY sale_time DESC LIMIT ?,?";
+		String sql2 = " SELECT TOP "+Integer.valueOf(size)+" * FROM product WHERE id NOT IN (SELECT TOP "
+				+Integer.valueOf((number - 1) * size)+" id FROM product WHERE cate_id="
+				+cate_id+"  ORDER BY id DESC) AND cate_id="+cate_id+"  ORDER BY id DESC";
 
 		Connection conn = null;
 		try{
 			conn = DbHelper.getConn();
 			
-			Long temp = qr.query(conn, sql, scalarHandler, cate_id);
+			Object obj = qr.query(conn, sql, scalarHandler, cate_id);
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null && temp.longValue() > 0){
 				page.setTotalElements(temp.longValue());
 				
-				Object[] params = {cate_id,
+				/*Object[] params = {cate_id,
 						Integer.valueOf((number - 1) * size),
-						Integer.valueOf(size)};
+						Integer.valueOf(size)};*/
 				
-				List<Product> list = qr.query(conn, sql2, beanListHandler, params);
+				List<Product> list = qr.query(conn, sql2, beanListHandler);
 				page.setItems(list);
 			}
 		}catch(Exception e){
@@ -289,20 +294,20 @@ public class ProductService {
 		Page<Product> page = new Page<>(number, size);
 		
 		String sql = "SELECT COUNT(id) FROM product";
-		String sql2 = "SELECT * FROM product ORDER BY sales_volume DESC,id DESC LIMIT ?,?";
-
+		//String sql2 = "SELECT * FROM product ORDER BY sales_volume DESC,id DESC LIMIT ?,?";
+		String sql2 = "SELECT TOP "+Integer.valueOf(size)+" * FROM product WHERE id NOT IN (SELECT TOP "+Integer.valueOf((number - 1) * size)+" id FROM product ORDER BY sales_volume DESC, id DESC) ORDER BY sales_volume DESC, id DESC";
 		Connection conn = null;
 		try{
 			conn = DbHelper.getConn();
 			
-			Long temp = qr.query(conn, sql, scalarHandler);
+			Object obj = qr.query(conn, sql, scalarHandler);
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null && temp.longValue() > 0){
 				page.setTotalElements(temp.longValue());
 				
-				Object[] params = {Integer.valueOf((number - 1) * size),
-						Integer.valueOf(size)};
-				
-				List<Product> list = qr.query(conn, sql2, beanListHandler, params);
+				/*Object[] params = {Integer.valueOf((number - 1) * size),
+						Integer.valueOf(size)};*/
+				List<Product> list = qr.query(conn, sql2, beanListHandler);
 				page.setItems(list);
 			}
 		}catch(Exception e){
@@ -408,21 +413,25 @@ public class ProductService {
 		System.out.println(name);
 		
 		String sql = "SELECT COUNT(id) FROM product WHERE name LIKE ?";
-		String sql2 = "SELECT * FROM product WHERE name LIKE ? ORDER BY id DESC LIMIT ?,?";
+//		String sql2 = "SELECT * FROM product WHERE name LIKE ? ORDER BY id DESC LIMIT ?,?";
+		String sql2 = "SELECT TOP "+Integer.valueOf(size)+" * FROM product WHERE id NOT IN " +
+				"(SELECT TOP "+Integer.valueOf((number - 1) * size)+" id FROM product WHERE name LIKE '%"+name+"%' ORDER BY id DESC) " +
+				"AND name LIKE '%"+name+"%' ORDER BY id DESC";
 
 		Connection conn = null;
 		try{
 			conn = DbHelper.getConn();
 			
-			Long temp = qr.query(conn, sql, scalarHandler, "%" + name + "%");
+			Object obj = qr.query(conn, sql, scalarHandler, "%" + name + "%");
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null && temp.longValue() > 0){
 				page.setTotalElements(temp.longValue());
 				
-				Object[] params = {"%" + name + "%",
+				/*Object[] params = {"%" + name + "%",
 						Integer.valueOf((number - 1) * size),
-						Integer.valueOf(size)};
+						Integer.valueOf(size)};*/
 				
-				List<Product> list = qr.query(conn, sql2, beanListHandler, params);
+				List<Product> list = qr.query(conn, sql2, beanListHandler);
 				page.setItems(list);
 			}
 		}catch(Exception e){
@@ -445,25 +454,25 @@ public class ProductService {
 		Page<Product> page = new Page<>(number, size);
 		
 		String sql = "SELECT COUNT(id) FROM product "
-				+ "WHERE cate_id IN(SELECT id FROM category WHERE p_id=?)";
+				+ "WHERE cate_id IN(SELECT id FROM category WHERE p_id="+cate_id+")";
 		
-		String sql2 = "SELECT * FROM product "
-				+ "WHERE cate_id IN(SELECT id FROM category WHERE p_id=?) "
-				+ "ORDER BY id DESC LIMIT ?,?";
+		//String sql2 = "SELECT * FROM product WHERE cate_id IN(SELECT id FROM category WHERE p_id=?) ORDER BY id DESC LIMIT ?,?";
+		String sql2 = " SELECT TOP "+Integer.valueOf(size)+" * FROM product WHERE id NOT IN " +
+				"(SELECT TOP "+Integer.valueOf((number - 1) * size)+" id FROM product WHERE cate_id IN(SELECT id FROM category WHERE p_id="+cate_id+") ORDER BY id DESC) " +
+				"AND cate_id IN(SELECT id FROM category WHERE p_id="+cate_id+") ORDER BY id DESC";
 
 		Connection conn = null;
 		try{
 			conn = DbHelper.getConn();
 			
-			Long temp = qr.query(conn, sql, scalarHandler, cate_id);
+			Object obj = qr.query(conn, sql, scalarHandler);
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null && temp.longValue() > 0){
 				page.setTotalElements(temp.longValue());
-				
-				Object[] params = {cate_id,
-						Integer.valueOf((number - 1) * size),
-						Integer.valueOf(size)};
-				
-				List<Product> list = qr.query(conn, sql2, beanListHandler, params);
+//				Object[] params = {cate_id,
+//						Integer.valueOf((number - 1) * size),
+//						Integer.valueOf(size)};
+				List<Product> list = qr.query(conn, sql2, beanListHandler);
 				page.setItems(list);
 			}
 		}catch(Exception e){

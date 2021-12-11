@@ -1,17 +1,16 @@
 package com.huangyunchi.service;
 
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.List;
-
+import com.huangyunchi.common.DbHelper;
+import com.huangyunchi.entity.Address;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import com.huangyunchi.common.DbHelper;
-import com.huangyunchi.entity.Address;
+import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 地址的业务逻辑类
@@ -24,12 +23,12 @@ public class AddressService {
 	private BeanListHandler<Address> beanListHandler = new BeanListHandler<Address>(Address.class);
 	
 	public Address save(Address address) throws RuntimeException{
-		String sql = "INSERT INTO address(contact, mobile, street, zipcode, "
+		String sql = "INSERT INTO address (contact, mobile, street, zipcode, "
 				+ "default_value, mbr_id) VALUES(?,?,?,?,?,?)";
 		
 		Object[] params = {address.getContact(), address.getMobile(),
-				address.getStreet(), address.getZipcode(), 
-				address.getDefault_value(), address.getMbr_id()};
+				address.getStreet(), address.getZipcode(),
+				address.getDefault_value()==true?1:0,address.getMbr_id()};
 		
 		Connection conn = null;
 		try{
@@ -37,7 +36,8 @@ public class AddressService {
 			conn.setAutoCommit(false); //开启事务
 
 			//执行数据库操作的插入操作，返回生成的主键值
-			Long id = qr.insert(conn, sql, scalarHandler, params);
+			Object obj = qr.insert(conn, sql, scalarHandler, params);
+			Long id = Long.valueOf(String.valueOf(obj));
 			address.setId(id.intValue());
 			
 			DbUtils.commitAndCloseQuietly(conn); //提交事务并关闭连接
@@ -56,12 +56,13 @@ public class AddressService {
 	 * @throws RuntimeException
 	 */
 	public void update(Address address) throws RuntimeException{
-		String sql = "UPDATE address SET contact=?, mobile=?, street=?, "
-				+ "zipcode=?,default_value=?,mbr_id=? WHERE id=?";
+		String sql = "UPDATE address SET contact='"+address.getContact()+"',mobile='"+address.getMobile()+"',street='"+address.getStreet()
+				+"',zipcode='"+address.getZipcode()+"',default_value="+(address.getDefault_value()==true?1:0)+",mbr_id="+address.getMbr_id()
+				+" WHERE id="+address.getId();
 		
-		Object[] params = {address.getContact(), address.getMobile(),
+		/*Object[] params = {address.getContact(), address.getMobile(),
 				address.getStreet(), address.getZipcode(), 
-				address.getDefault_value(), address.getMbr_id(), address.getId()};
+				address.getDefault_value()==true?1:0, address.getMbr_id(), address.getId()};*/
 		
 		Connection conn = null;
 		try{
@@ -69,7 +70,7 @@ public class AddressService {
 			conn.setAutoCommit(false); //开启事务
 			
 			//执行数据库的更新操作
-			qr.update(conn, sql, params);
+			qr.update(conn, sql);
 			
 			DbUtils.commitAndCloseQuietly(conn); //提交事务并关闭连接
 		}catch(Exception e){
@@ -80,8 +81,8 @@ public class AddressService {
 	}
 	
 	public void updateDefault(Integer mbr_id, Integer address_id) throws RuntimeException{
-		String sql = "UPDATE address SET default_value=false WHERE mbr_id=?";
-		String sql2 = "UPDATE address SET default_value=true WHERE mbr_id=? AND id=?";
+		String sql = "UPDATE address SET default_value=0 WHERE mbr_id=?";
+		String sql2 = "UPDATE address SET default_value=1 WHERE mbr_id=? AND id=?";
 		
 		Connection conn = null;
 		try{

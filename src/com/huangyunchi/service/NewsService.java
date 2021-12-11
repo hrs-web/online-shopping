@@ -1,19 +1,18 @@
 package com.huangyunchi.service;
 
-import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
+import com.huangyunchi.common.DbHelper;
+import com.huangyunchi.entity.News;
+import com.huangyunchi.entity.common.Page;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 
-import com.huangyunchi.common.DbHelper;
-import com.huangyunchi.entity.News;
-import com.huangyunchi.entity.common.Page;
+import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -27,7 +26,7 @@ public class NewsService {
 	private BeanListHandler<News> beanListHandler = new BeanListHandler<News>(News.class);
 
 	public News save(News news) throws RuntimeException{
-		String sql = "INSERT INTO news(title, thumbnail, content, top,"
+		String sql = "INSERT INTO news (title, thumbnail, content, top,"
 				+ " hits, pub_time) VALUES(?,?,?,?,?,?)";
 		
 		Object[] params = {news.getTitle(), news.getThumbnail(), 
@@ -186,24 +185,20 @@ public class NewsService {
 	 */
 	public Page<News> findTopByPublic(int number, int size)throws RuntimeException{
 		Page<News> page = new Page<>(number, size);
-		
-		String sql = "SELECT COUNT(id) FROM news WHERE top=true AND pub_time<=?";
-		String sql2 = "SELECT * FROM news WHERE top=true AND pub_time<=? ORDER BY id DESC LIMIT ?,?";
-		Object param1 = new Date();
-		
+		Date param1 = new java.sql.Date(new Date().getTime());
+		String sql = "SELECT COUNT(id) FROM news WHERE [top]=1 AND pub_time<=?";
+		//String sql2 = "SELECT * FROM news WHERE [top]=1 AND pub_time<=? ORDER BY id DESC LIMIT ?,?";
+		String sql2 = "SELECT * FROM(SELECT TOP "+Integer.valueOf(size)+" ROW_NUMBER() OVER(ORDER BY id DESC) AS ROWID,* FROM news WHERE [top]=1 AND pub_time<='"+param1+"') AS TEMP WHERE ROWID> "+Integer.valueOf((number - 1) * size);
 		Connection conn = null;
 		try{
 			conn = DbHelper.getConn();
-			
-			Long temp = qr
+			Object obj = qr
 					.query(conn, sql, scalarHandler, param1);
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null && temp.longValue() > 0){
 				page.setTotalElements(temp.longValue());
-				
-				Object[] params = {param1, Integer.valueOf((number - 1) * size),
-						Integer.valueOf(size)};
-				
-				List<News> list = qr.query(conn, sql2, beanListHandler, params);
+				System.out.println(sql2);
+				List<News> list = qr.query(conn, sql2, beanListHandler);
 				page.setItems(list);
 			}
 		}catch(Exception e){
@@ -223,23 +218,21 @@ public class NewsService {
 	 */
 	public Page<News> findByPublic(int number, int size)throws RuntimeException{
 		Page<News> page = new Page<>(number, size);
-		
+		Date param1 = new java.sql.Date(new Date().getTime());
 		String sql = "SELECT COUNT(id) FROM news WHERE pub_time<=?";
-		String sql2 = "SELECT * FROM news WHERE pub_time<=? ORDER BY id DESC LIMIT ?,?";
-		Object param1 = new Date();
-		
+//		String sql2 = "SELECT * FROM news WHERE pub_time<=? ORDER BY id DESC LIMIT ?,?";
+		String sql2 = "SELECT * FROM(SELECT TOP "+Integer.valueOf(size)+" ROW_NUMBER() OVER(ORDER BY id DESC) AS ROWID,* FROM news WHERE pub_time<='"+param1+"') AS TEMP WHERE ROWID> "+Integer.valueOf((number - 1) * size);
 		Connection conn = null;
 		try{
 			conn = DbHelper.getConn();
 			
-			Long temp = qr.query(conn, sql, scalarHandler, param1);
+			Object obj = qr.query(conn, sql, scalarHandler, param1);
+			Long temp = Long.valueOf(String.valueOf(obj));
 			if(temp != null && temp.longValue() > 0){
 				page.setTotalElements(temp.longValue());
-				
-				Object[] params = {param1, Integer.valueOf((number - 1) * size),
-						Integer.valueOf(size)};
-				
-				List<News> list = qr.query(conn, sql2, beanListHandler, params);
+//				Object[] params = {param1, Integer.valueOf((number - 1) * size),
+//						Integer.valueOf(size)};
+				List<News> list = qr.query(conn, sql2, beanListHandler);
 				page.setItems(list);
 			}
 		}catch(Exception e){

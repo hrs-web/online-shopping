@@ -1,16 +1,15 @@
 package com.huangyunchi.web.controller;
 
-import java.io.IOException;
-import java.util.Date;
+import com.huangyunchi.entity.Member;
+import com.huangyunchi.service.MemberService;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import com.huangyunchi.entity.Member;
-import com.huangyunchi.service.MemberService;
+import java.io.IOException;
+import java.util.Date;
 
 /**
  * 处理注册会员的Servlet
@@ -38,7 +37,7 @@ public class MemberRegisterServlet extends HttpServlet {
 		mbr.setMobile(mobile);
 		mbr.setPwd(pwd);
 		mbr.setNick_name("匿名");
-		mbr.setRegister_time(new Date());
+		mbr.setRegister_time(new java.sql.Date(new Date().getTime()));
 		
 		//step2: 业务逻辑处理
 		MemberService service = new MemberService();
