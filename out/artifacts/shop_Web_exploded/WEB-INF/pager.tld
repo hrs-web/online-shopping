@@ -8,7 +8,7 @@
 
 	<tag>
 		<name>pager</name>
-		<tag-class>com.huangyunchi.web.tag.PagerTag</tag-class>
+		<tag-class>com.shop.web.tag.PagerTag</tag-class>
 		<body-content>empty</body-content>
 		<attribute>
 			<name>number</name>

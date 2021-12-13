@@ -2,8 +2,8 @@ package com.zhuoxun365.service;
 
 import java.util.List;
 
-import com.huangyunchi.entity.Category;
-import com.huangyunchi.service.CategoryService;
+import com.shop.entity.Category;
+import com.shop.service.CategoryService;
 
 public class CategoryServiceTest {
 

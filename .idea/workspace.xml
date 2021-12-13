@@ -6,7 +6,591 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca4728a3-c474-4d86-bd32-f6bf6929ec3c" name="Default Changelist" comment="" />
+    <list default="true" id="ca4728a3-c474-4d86-bd32-f6bf6929ec3c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebContent/WEB-INF/lib/sqljdbc4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/shop_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/shop_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/commons_dbutils_1_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/commons_dbutils_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_annotation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/pager.tld" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/pager.tld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/common/DbHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/entity/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/entity/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/entity/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/entity/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/entity/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/entity/common/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/service/AddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/service/MemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/service/NewsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/service/OrdersService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/AddToCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/MemberLoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/MemberRegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/NewsDetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/NewsListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/OrderConfirmServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/PaymentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/ProductDetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/ProductListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/RemoveFromCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/SearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/AddressAddServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/AddressDefaultServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/AddressDeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/AddressListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/AddressUpdateServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/MemberChangePwdServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/MemberProfileServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/controller/member/OrderListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/filter/SecurityFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/filter/SetCharacterEncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/listener/MyServletContextListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/production/shop/com/huangyunchi/web/tag/PagerTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_Web_exploded/WEB-INF/pager.tld" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/shop_Web_exploded/WEB-INF/pager.tld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/common/DbHelper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/entity/Address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/entity/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/entity/Item.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/entity/Member.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/entity/News.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/entity/Orders.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/entity/common/Page.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/service/AddressService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/service/CategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/service/MemberService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/service/NewsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/service/OrdersService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/service/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/AddToCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/MainServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/MemberLoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/MemberRegisterServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/NewsDetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/NewsListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/OrderConfirmServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/PaymentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/ProductDetailServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/ProductListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/RemoveFromCartServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/SearchServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/AddressAddServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/AddressDefaultServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/AddressDeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/AddressListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/AddressUpdateServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/MemberChangePwdServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/MemberProfileServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/controller/member/OrderListServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/filter/SecurityFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/filter/SetCharacterEncodingFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/listener/MyServletContextListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/com/huangyunchi/web/tag/PagerTag.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/classes/dbconfig.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/commons-dbutils-1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/druid-1.0.20.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/gson-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/jstl-api-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.12.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/about.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/css/my.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/icd_bottom.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/icd_link.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/icd_meta.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/icd_top.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/images/button_qq.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/images/logo-zx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/images/r_phone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/images/r_qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/images/r_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/images/r_wx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/alienware-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/alienware-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/alienware-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/alienware.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/banner_ad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/bingxiang01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/bingxiang0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/bingxiang0102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/bingxiang0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/bingxiang0104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/bingxiang0105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/chaopin01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/chaopin0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/chaopin0102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/chaopin0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/chaopin0104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/chaopin0105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/chaopin0106.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dajiadian01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dajiadian0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dajiadian0102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dajiadian0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dajiadian0104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dell-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dell-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dell-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dell-desktop-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dell-desktop-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dell-desktop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/dell.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/detail-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/detail-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/detail-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/detail-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/huawei.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/hw-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/ipad-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/ipad-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/ipad-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/ipad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/iphone6s.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/kongtiao01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/kongtiao0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/kongtiao0102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/kongtiao0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/kongtiao0104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/kongtiao0105.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/lenovo-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/lenovo-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/lenovo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/letv-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/letv-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/letv-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/letv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mbp-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mbp-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mbp.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/me1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/me2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/me3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/me4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/meinote3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mi-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mi-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mi-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mi-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mi-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mi-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mipad-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mipad-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mipad-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mipad-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mipad-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/mipad.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/n1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/n2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/n3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/n4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/nokia.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/sheyingshexiang01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/sheyingshexiang0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/sheyingshexiang0102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/sheyingshexiang0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/sheyingshexiang0104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/sliding-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/sliding-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/sliding-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/thinkpad-x1-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/thinkpad-x1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/uniscope.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/us-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/us-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/us-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/us-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/us-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiaojiadian01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiaojiadian0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiaojiadian0102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiaojiadian0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiaojiadian02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiaomi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiyiji01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiyiji0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiyiji0102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiyiji0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xiyiji0104.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/xxx.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyuele0103.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule0101.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule0102.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule0201.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule0202.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule0203.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule0301.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule0302.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/img/yingyinyule0303.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/js/jquery.scrollUp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/js/my.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/kindeditor-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/lang/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/lang/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/lang/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/lang/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/anchor/anchor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/autoheight/autoheight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/baidumap/baidumap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/baidumap/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/baidumap/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/clearhtml/clearhtml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/code/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/code/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/code/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/emoticons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/100.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/101.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/102.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/103.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/104.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/105.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/106.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/107.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/108.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/109.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/110.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/111.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/112.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/113.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/114.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/115.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/116.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/117.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/118.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/119.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/120.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/121.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/122.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/123.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/124.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/125.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/126.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/127.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/128.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/129.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/130.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/131.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/132.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/133.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/134.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/72.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/73.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/74.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/75.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/76.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/77.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/78.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/79.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/80.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/81.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/82.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/83.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/84.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/85.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/86.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/87.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/88.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/89.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/90.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/91.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/92.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/93.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/94.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/95.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/96.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/97.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/98.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/99.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/emoticons/images/static.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/filemanager/filemanager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/filemanager/images/file-16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/filemanager/images/file-64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/filemanager/images/folder-16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/filemanager/images/folder-64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/filemanager/images/go-up.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/flash/flash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/image/images/align_left.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/image/images/align_right.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/image/images/align_top.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/image/images/refresh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/insertfile/insertfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/lineheight/lineheight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/link/link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/map/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/media/media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/multiimage/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/multiimage/images/select-files-en.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/multiimage/images/select-files-zh_CN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/multiimage/images/swfupload.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/multiimage/multiimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/pagebreak/pagebreak.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/plainpaste/plainpaste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/preview/preview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/quickformat/quickformat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/table/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/template/html/1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/template/html/2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/template/html/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/plugins/wordpaste/wordpaste.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/common/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/common/blank.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/common/flash.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/common/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/common/media.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/common/rm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/default/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/default/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/default/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/qq/editor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/qq/qq.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/kindeditor/themes/simple/simple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/main.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/member/address.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/member/icd_menu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/member/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/member/profile.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/member/updatepwd.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/member_login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/member_register.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/news_detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/news_list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/orders.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/product_detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/product_list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/result.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/view_cart.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/css/zui-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/css/zui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/fonts/zenicon.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/fonts/zenicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/fonts/zenicon.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/fonts/zenicon.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/js/zui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/js/zui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/board/zui.board.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/board/zui.board.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/board/zui.board.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/board/zui.board.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/calendar/zui.calendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/calendar/zui.calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/calendar/zui.calendar.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/calendar/zui.calendar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chart/chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chart/chart.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chosen/chosen.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chosen/chosen.icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chosen/chosen.icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chosen/chosen.icons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chosen/chosen.icons.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chosen/chosen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chosen/chosen.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/chosen/chosen.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/datatable/zui.datatable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/datatable/zui.datatable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/datatable/zui.datatable.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/datatable/zui.datatable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/datetimepicker/datetimepicker.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/datetimepicker/datetimepicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/datetimepicker/datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/datetimepicker/datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/droppable/droppable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/droppable/droppable.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/hotkey/hotkey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/hotkey/hotkey.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/ieonly/excanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/ieonly/html5shiv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/ieonly/respond.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/imgcutter/zui.imgcutter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/imgcutter/zui.imgcutter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/imgcutter/zui.imgcutter.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/imgcutter/zui.imgcutter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/kindeditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/kindeditor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/kindeditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/kindeditor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/lang/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/lang/zh_CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/lang/zh_TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/themes/default/default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/themes/default/default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/themes/default/default.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/kindeditor/themes/default/gray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/migrate/migrate1.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/migrate/migrate1.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-apollo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-basic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-clj.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-dart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-erlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-go.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-hs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-lisp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-llvm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-lua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-matlab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-ml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-mumps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-pascal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-proto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-r.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-rd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-scala.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-sql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-tcl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-tex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-vb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-vhdl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-wiki.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-xq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/lang-yaml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/shop_war_exploded/zui/lib/prettify/run_prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/common/DbHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/common/DbHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/entity/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/entity/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/entity/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/entity/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/entity/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/entity/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/entity/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/entity/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/entity/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/entity/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/entity/common/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/entity/common/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/service/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/service/NewsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/service/NewsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/service/OrdersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/service/OrdersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/AddToCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/AddToCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/MainServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/MainServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/MemberLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/MemberLoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/MemberRegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/MemberRegisterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/NewsDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/NewsDetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/NewsListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/NewsListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/OrderConfirmServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/OrderConfirmServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/PaymentServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/PaymentServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/ProductDetailServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/ProductDetailServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/ProductListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/ProductListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/RemoveFromCartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/RemoveFromCartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/SearchServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/SearchServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/AddressAddServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/AddressAddServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/AddressDefaultServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/AddressDefaultServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/AddressDeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/AddressDeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/AddressListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/AddressListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/AddressUpdateServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/AddressUpdateServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/MemberChangePwdServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/MemberChangePwdServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/MemberProfileServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/MemberProfileServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/controller/member/OrderListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/controller/member/OrderListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/filter/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/filter/SecurityFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/filter/SetCharacterEncodingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/filter/SetCharacterEncodingFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/listener/MyServletContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/listener/MyServletContextListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/huangyunchi/web/tag/PagerTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/shop/web/tag/PagerTag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/zhuoxun365/common/DbHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/zhuoxun365/common/DbHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/zhuoxun365/service/CategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/zhuoxun365/service/CategoryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/zhuoxun365/service/MemberServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/zhuoxun365/service/MemberServiceTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,16 +600,60 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/common/DbHelper.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/dbconfig.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+            <state relative-caret-position="57">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shop/entity/Address.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shop/common/DbHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/shop/service/MemberService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,19 +662,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/zhuoxun365/common/DbHelperTest.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/zhuoxun365/service/CategoryServiceTest.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/zhuoxun365/service/MemberServiceTest.java">
+        <entry file="file://$PROJECT_DIR$/src/com/shop/service/AddressService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-760" />
+            <state relative-caret-position="2964">
+              <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shop/web/tag/PagerTag.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/pager.tld">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shop/service/CategoryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1900">
+              <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/shop/web/listener/MyServletContextListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="627">
+              <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -57,6 +719,9 @@
       <find>ctx</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -66,6 +731,7 @@
         <option value="$PROJECT_DIR$/src/com/huangyunchi/common/DbHelper.java" />
         <option value="$PROJECT_DIR$/WebContent/index.jsp" />
         <option value="$PROJECT_DIR$/WebContent/icd_top.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/pager.tld" />
       </list>
     </option>
   </component>
@@ -84,21 +750,27 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="PhpServers">
     <servers />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="145" />
-    <option name="y" value="396" />
+    <option name="y" value="395" />
     <option name="width" value="1400" />
-    <option name="height" value="933" />
+    <option name="height" value="935" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -106,26 +778,87 @@
               <item name="shop" type="b2602c69:ProjectViewProjectNode" />
               <item name="shop" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="filter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="tag" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="shop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shop" type="462c0819:PsiDirectoryNode" />
+              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/WebContent/WEB-INF/lib/gson-2.3.1.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.24558823" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\黄日升\Desktop\shopping-mall-master\shop\WebContent\WEB-INF\lib" />
       <recent name="C:\Users\黄日升\Desktop\shopping-mall-master\shop\WebContent\WEB-INF" />
       <recent name="C:\Users\黄日升\Desktop\shopping-mall-master\shop\lib" />
     </key>
@@ -142,11 +875,96 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="shop" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.21">
+    <configuration name="DbHelperTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhuoxun365.common.DbHelperTest" />
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhuoxun365.common.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.21" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="shop:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/shop" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_21_shop" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="11994" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="shop:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="shop" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="shop">
           <settings>
             <option name="CONTEXT_PATH" value="/shop" />
           </settings>
@@ -210,11 +1028,19 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="shop:war exploded" />
-        </option>
+        <option name="BuildArtifacts" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.DbHelperTest" />
+      <item itemvalue="Tomcat Server.shop" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.21" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DbHelperTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -228,17 +1054,27 @@
       <updated>1638967236494</updated>
       <workItem from="1638967237731" duration="8877000" />
       <workItem from="1639054597599" duration="954000" />
+      <workItem from="1639368143640" duration="1322000" />
+      <workItem from="1639385709882" duration="6466000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9831000" />
+    <option name="totallyTimeSpent" value="18151000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21782842" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1735925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -246,25 +1082,25 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.20650637" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.51133144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22630835" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.49150142" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32956153" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32956153" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
       <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32956153" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.3297587" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="SciView" order="7" />
     </layout>
@@ -272,12 +1108,61 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/pager.tld">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -285,67 +1170,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/member_login.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/filter/SecurityFilter.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/web/filter/SecurityFilter.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/web/listener/MyServletContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/entity/Address.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/entity/Category.java">
+    <entry file="file://$PROJECT_DIR$/src/com/shop/entity/Category.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/web/controller/AddToCartServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/controller/AddToCartServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/service/AddressService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/dbconfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -362,12 +1203,6 @@
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/icd_meta.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/icd_link.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/icd_bottom.jsp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -400,13 +1235,161 @@
         <state relative-caret-position="-760" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/zhuoxun365/common/DbHelperTest.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/orders.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/product_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1406">
+          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/service/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/icd_link.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/huangyunchi/common/DbHelper.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/icd_meta.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/member_login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state relative-caret-position="1045">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/controller/PaymentServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="66" column="9" selection-start-line="36" selection-start-column="8" selection-end-line="66" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/service/OrdersService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/controller/member/MemberChangePwdServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/controller/member/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/controller/member/MemberProfileServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/controller/member/OrderListServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/dbconfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/entity/Address.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/service/AddressService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2964">
+          <caret line="156" column="19" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/tag/PagerTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/pager.tld">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/web/listener/MyServletContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="40" column="38" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/zhuoxun365/common/DbHelperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/common/DbHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1900">
+          <caret line="100" column="28" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/shop/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -424,6 +1407,7 @@
             <option name="proportions">
               <list>
                 <option value="0.24558823" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -431,7 +1415,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Web (shop)|Web</last-edited>
+          <last-edited>Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -466,7 +1450,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>shop</last-edited>
+          <last-edited>Web|shop</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -490,7 +1474,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>javax.annotation</last-edited>
+          <last-edited>commons-dbutils-1.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,7 +1,7 @@
 package com.zhuoxun365.common;
 
-import com.huangyunchi.common.DbHelper;
-import com.huangyunchi.entity.News;
+import com.shop.common.DbHelper;
+import com.shop.entity.News;
 import org.apache.commons.dbutils.DbUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;

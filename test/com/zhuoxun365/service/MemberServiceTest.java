@@ -3,9 +3,9 @@ package com.zhuoxun365.service;
 import java.util.Date;
 import java.util.List;
 
-import com.huangyunchi.entity.Member;
-import com.huangyunchi.entity.common.Page;
-import com.huangyunchi.service.MemberService;
+import com.shop.entity.Member;
+import com.shop.entity.common.Page;
+import com.shop.service.MemberService;
 
 public class MemberServiceTest {
 
